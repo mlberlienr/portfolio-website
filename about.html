@@ -7,10 +7,13 @@
   <meta name="author" content="Marc Berliner">
   <meta name="keywords" content="UI design, UX design, Product design, Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Marc Berliner</title>
+  <title>Marc Berliner</title>
   <link href="img/logos/favicon.png" rel="shortcut icon">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,94 +21,95 @@
   <header>
     <!-- For the navigation -->
 
-    <div>
+    <div class="container">
       <a href="index.html">
-        <img src="img/logos/marcberlinerdesign.svg" alt="Marc Berliner Design">
+        <img src="img/logos/marcberlinerdesign.svg" alt="Marc Berliner Design"  class="logo">
       </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
-
-
+  
   <main>
     <!-- For the hero section -->
-  <div>
-    <div>
-      <h1>About Me</h1>
+    <div id="hero">
+      <div class="container">
+        <h1>About Me</h1>
+      </div>
     </div>
-  </div>
-<div>
-    <picture>
-      <img src="img/headshot/headshot.png" alt="Marc Berliner Picture">
-    </picture>
-    <div><!-- open row that holds (2)columns -->
-      <div><!-- open first column (used for my story) -->
-      <h2>My Story</h2>
-        <p>
-          I grew up in Weston Connecticut and attended Syracuse University for industrial and interactive design.
-        </p>
-        <p>
-          I have prior experience both as a designer and working in health care. I have worked for a design studio creating packaging and bottle designs for beauty products. There, I learned how to design products that were both beautiful and functional. The marriage of form and function are design principles that I currently use when creating user interfaces. In recent years I have worked at a treatment center to help patients overcome addiction and mental health issues. My prior design experience has helped grow my artistic and creative skills while my health care experience has shown me how to work with people in a compassionate manner.
-        </p>
-        <p>
-          Outside of work I enjoy staying active, exercising, skiing, and hiking. I also have a strong passion for the fine arts. I love to draw, paint, and sculpt.
-        </p>
-        <a href="files/marc_berliner_resume.pdf" target="_blank" class="button contact">View my resume</a>
-      </div><!-- end first column -->
+    <div>
+      <picture>
+        <img src="img/headshot/headshot.png" alt="Marc Berliner Picture" class="headshot">
+      </picture>
+      <div id="row">
+        <!-- open row that holds (2)columns -->
+        <div class="container">
+          <!-- open first column (used for my story) -->
+          <h2>My Story</h2>
+          <p>
+            I grew up in Weston Connecticut and attended Syracuse University for industrial and interactive design.
+          </p>
+          <p>
+            I have prior experience both as a designer and working in health care. I have worked for a design studio creating packaging and bottle designs for beauty products. There, I learned how to design products that were both beautiful and
+            functional. The marriage of form and function are design principles that I currently use when creating user interfaces. In recent years I have worked at a treatment center to help patients overcome addiction and mental health issues. My
+            prior design experience has helped grow my artistic and creative skills while my health care experience has shown me how to work with people in a compassionate manner.
+          </p>
+          <p>
+            Outside of work I enjoy staying active, exercising, skiing, and hiking. I also have a strong passion for the fine arts. I love to draw, paint, and sculpt.
+          </p>
+          <a href="files/marc_berliner_resume.pdf" target="_blank" class="button contact">View my resume</a>
+        </div><!-- end first column -->
 
-    <div><!-- open second column (used for Skills & Tools) -->
-      <h2>Skills &amp; Tools</h2>
-      <div>
-        <h3>Relevant Skills</h3>
-          <ul>
-            <li>User interface design</li>
+        <div class="container">
+          <!-- open second column (used for Skills & Tools) -->
+          <h2>Skills &amp; Tools</h2>
+          <div>
+            <h3>Relevant Skills</h3>
+            <ul>
+              <li>User interface design</li>
               <li>User experience design</li>
-                <li>Product design</li>
-                <li>User research</li>
-                <li>Rapid prototyping</li>
-                <li>User testing</li>
-              </ul>
-              </div>
-              <div>
-                <h3>Tools I Use</h3>
-                  <ul>
-                    <li>Figma</li>
-                      <li>Sketch</li>
-                      <li>Adobe XD</li>
-                      <li>Adobe Illustrator</li>
-                      <li>Adobe Photoshop</li>
-                      <li>Adobe Indesign </li>
-                  </ul>
-                </div>
-</div><!-- end second column -->
-</div><!-- end row that holds (2) columns -->
-</div>
-</main>
+              <li>Product design</li>
+              <li>User research</li>
+              <li>Rapid prototyping</li>
+              <li>User testing</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools I Use</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Sketch</li>
+              <li>Adobe XD</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Indesign </li>
+            </ul>
+          </div>
+        </div><!-- end second column -->
+      </div><!-- end row that holds (2) columns -->
+    </div>
+  </main>
 
 
   <!-- For the footer -->
   <footer>
-    <div>
+    <div class="container">
       <h2>Get in Touch</h2>
       <p>Did you like my work?</p>
-      <p> Email me at <a href="mailto:Mlberliner1@gmail.com?subject=feedback">Mlberliner1@gmail.com</a>.</p><br>
+      <p> Email me at <a href="mailto:Mlberliner1@gmail.com?subject=feedback" class="button contact">Mlberliner1@gmail.com</a></p>
       <p>Contact me by phone <a href="tel:+19178171930"> 917-817-1930</a>.</p>
-      <div>
-        <a href="mailto:Mlberliner1@gmail.com?subject=feedback">Email me</a>
-      </div>
       <!--Social Media Layout and Placeholders-->
       <div>
         <a href="https://www.linkedin.com/in/marc-berliner-46a29465" target="_blank">
-          <img src="img/logos/linkedin.png" alt="Linkedin">
+          <img id="linkedin_logo" src="img/logos/linkedin.svg" alt="Linkedin">
         </a>
         <a href="https://www.behance.net/marcberliner" target="_blank">
-          <img src="img/logos/behance.png" alt="Behance">
+          <img id="behance_logo" src="img/logos/behance.svg" alt="Behance">
         </a>
         <p>
           Copyright Marc Berliner 2022
@@ -113,7 +117,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>

@@ -15,21 +15,21 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-size: 2.75em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 300;
 }
 h4 {
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: 300;
 }
 img {
   width: 100%;
@@ -43,7 +43,7 @@ a:hover {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:visited { /* visited link */
-  color: #039BCB;
+  color: #A979E1
 }
 a:active { /* selected link */
   color: #039BCB;
@@ -69,6 +69,7 @@ a.button {
 }
 .button.contact {
   background-color: transparent;
+  margin-left: 8px;
   color: #03DAC6;
   text-transform: uppercase;
   border: 2px solid #03DAC6;
@@ -76,4 +77,78 @@ a.button {
 .button.contact:hover {
   background-color: #03DAA6;;
   color: #1C1B1D;
+/* Layout styling */
+
+}
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#linkedin_logo{
+  width: 40px;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#behance_logo{
+  width: 40px;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #D8D8D8; }
+
+#hero {
+  text-align: center; /* Centers text */
+}
+.logo {
+  max-width: 300px;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #1B1D1E;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #03DAC6;
+}
+nav > ul > li > a:visited{
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #A979E1;
+}
+#hero {
+  background-color: #1B1D1E;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 124px;
+}
+footer {
+  text-align: center;
+}
+.headshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-top: 50px;
 }
