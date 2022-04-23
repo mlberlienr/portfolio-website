@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color:#2D3031
 }
 body {
   font-family: 'rubik', sans-serif;
-  font-size: 20px; /* Sets the font size to 20px */
+  font-size: 18px; /* Sets the font size to 20px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #ffffff
@@ -60,7 +63,7 @@ a.button {
   font-weight: 400;
   padding: 16px;
   border-radius: 10px;
-  transition: 0.2s opacity;
+  transition: 0.2s;
 }
 .button:hover {
   background-color: #03DAA6;
@@ -85,18 +88,12 @@ a.button {
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+
 }
-#linkedin_logo{
+footer img{
   width: 40px;
   height: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-#behance_logo{
-  width: 40px;
-  height: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+
 }
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #D8D8D8; }
 
@@ -104,13 +101,13 @@ a.button {
   text-align: center; /* Centers text */
 }
 .logo {
-  max-width: 300px;
+  max-width: 250px;
 }
 header {
   position: fixed;
   width: 100%;
   background-color: #1B1D1E;
-  text-align: center;
+  text-align:center;
   padding: 10px 0;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
 }
@@ -140,7 +137,7 @@ nav > ul > li > a:visited{
   width: 100%;
 }
 main {
-  padding-top: 124px;
+  padding-top: 99px;
 }
 footer {
   text-align: center;
@@ -151,4 +148,114 @@ footer {
   margin-right: auto;
   width: 40%;
   padding-top: 50px;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+header {
+  text-align: unset;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+#hero span {
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#about-page h3 {
+margin-top: 0;
+}
+#about-page h4 {
+line-height: .1;
+}
+#resume_button{
+text-align: center;
+padding-bottom: 20px;
+}
+.col-lg-7 {
+  width: 58.33%;
+}
+.col-lg-5 {
+  width: 41.66%;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+berlin-illustration {
+width: 100%;
+max-width: 100%;
+height: auto;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
