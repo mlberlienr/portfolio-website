@@ -18,7 +18,7 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-size: 2.75em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h2 {
@@ -63,7 +63,7 @@ a.button {
   font-weight: 400;
   padding: 16px;
   border-radius: 10px;
-  transition: 0.2s;
+  transition: .7s;
 }
 .button:hover {
   background-color: #03DAA6;
@@ -181,6 +181,11 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+  header > img {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 }
 #hero span {
   display: block;
@@ -218,44 +223,48 @@ padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
-berlin-illustration {
-width: 100%;
-max-width: 100%;
-height: auto;
+#illustration {
+  display: block;
+  padding: auto;
+  width: 65%;
+  padding-top: 50px;
+  padding-bottom:20px;
 }
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {fill: #E5E13C;}
+  100% {fill: #6D6B2C;}
+  }
 }
-.sun {
-  animation-duration: 4s;
+.l {
+  animation-duration: 2s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-.sun {
-  animation: 4s color-change infinite alternate linear;
+.l {
+  animation: 2s color-change infinite alternate linear;
 }
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+@keyframes steam-move {
+  from {transform: translate(0,0px);}
+  to {transform: translate(0px,-70px);}
 }
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
+.p-1 {
+  animation-duration: 1.5s;
+  animation-name: steam-move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+@keyframes steam-move {
+  from {transform: translate(0,0px);}
+  to {transform: translate(0px,-20px);}
 }
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+.p-2 {
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+  animation-name: steam-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
