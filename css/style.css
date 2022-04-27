@@ -11,8 +11,9 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #ffffff
 }
+body{
+  min-height: 100vh;
 }
-
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -93,12 +94,17 @@ a.button {
 footer img{
   width: 40px;
   height: auto;
+  margin: 10px;
 
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #D8D8D8; }
+#work .row
+  { padding-bottom: 25px; border-bottom: 1px solid #D8D8D8;
+}
+#bottom-work .row { padding-bottom: 20px;
+}
 
 #hero {
-  text-align: center; /* Centers text */
+  text-align: left; /* Centers text */
 }
 .logo {
   max-width: 250px;
@@ -140,7 +146,9 @@ main {
   padding-top: 99px;
 }
 footer {
-  text-align: center;
+  text-align: left;
+  background-color: #1B1D1E;
+  padding: 10px 0;
 }
 .headshot {
   display: block;
@@ -148,24 +156,6 @@ footer {
   margin-right: auto;
   width: 40%;
   padding-top: 50px;
-}
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-}
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
-header {
-  text-align: unset;
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -187,6 +177,20 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 }
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+header {
+  text-align: unset;
+}
+
 #hero span {
   display: block;
 }
@@ -225,7 +229,6 @@ padding-bottom: 20px;
 }
 #illustration {
   display: block;
-  padding: auto;
   width: 65%;
   padding-top: 50px;
   padding-bottom:20px;
@@ -235,14 +238,14 @@ padding-bottom: 20px;
   100% {fill: #6D6B2C;}
   }
 }
-.l {
-  animation-duration: 2s;
+.n {
+  animation-duration: 1s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-.l {
+.n {
   animation: 2s color-change infinite alternate linear;
 }
 @keyframes steam-move {
@@ -266,5 +269,18 @@ padding-bottom: 20px;
   animation-name: steam-move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes eyelid-move {
+0% {transform: translate(0px,0px);}
+10% {transform: translate(0px,-20px);}
+20% {transform: translate(0px,0px);}
+100% {transform: translate(0px,0px);}
+}
+.u-1 {
+  animation-delay: 1s;
+  animation-duration: 6s;
+  animation-name: eyelid-move;
+  animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
