@@ -6,7 +6,7 @@ body {
 }
 body {
   font-family: 'rubik', sans-serif;
-  font-size: 16px; /* Sets the font size to 18px */
+  font-size: 12px; /* Sets the font size to 18px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #ffffff
@@ -62,7 +62,7 @@ a.button {
   display: inline-block;
   background-color: #03DAC6;
   color: #1C1B1D; /* needed to override the default link color */
-  font-weight: 400;
+  font-weight: 600;
   padding: 16px;
   border-radius: 10px;
   transition: .5s;
@@ -75,6 +75,7 @@ a.button {
 .button.contact {
   background-color: transparent;
   margin-left: 8px;
+  margin-right: 8px;
   color: #03DAC6;
   text-transform: uppercase;
   border: 2px solid #03DAC6;
@@ -87,6 +88,8 @@ a.button {
 }
 .container {
   padding: 0 15px;
+}
+header .container{
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -117,6 +120,7 @@ header {
   background-color: #1B1D1E;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
   padding: 10px 0 4px;
+  z-index: 3;
 }
 nav > ul {
   list-style-type: none;
@@ -137,7 +141,6 @@ nav > ul > li > a:visited{
 }
 #hero {
   background-color: #1B1D1E;
-  padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
@@ -197,10 +200,22 @@ nav {
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
 }
+#hero h3 {
+  font-weight: lighter;
+}
+#hero h1 {
+  font-weight: 500;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+  #hero{
+    padding-top: 40px;
+  }
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -257,6 +272,14 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 33.33%;
 }
+#illustration{
+  float: right;
+}
+#heroText{
+  position: absolute;
+  max-width: 690px;
+  padding-left: 40px;
+}
 }
 /* ==============================
 X-large devices (1440px or larger)
@@ -290,8 +313,10 @@ padding-bottom: 30px;
 #illustration {
   display: block;
   width: 65%;
-  padding-top: 50px;
-  padding-bottom:20px;
+  padding-top: 10px;
+  padding-bottom:0px;
+  z-index: 1;
+  max-width: 806px;
 }
 @keyframes color-change {
   0% {fill: #E5E13C;}
