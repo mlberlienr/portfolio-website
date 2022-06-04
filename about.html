@@ -21,22 +21,29 @@
   <!-- For the header -->
   <header id="navBar">
     <!-- For the navigation -->
-    <div class="container">
+
       <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
         <img src="img/logos/marcberlinerdesign.svg" alt="Marc Berliner Design" class="logo" id="logo">
       </a>
 
       <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
+        <ul style="margin-right: 15px;">
+          <li><a href="index.html#work">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a onclick="menuToggle()" href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+
+          <li>
+              <p id="click_advance">
+                  <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                      <i class="fas fa-bars fas"></i>
+                  </a>
+              </p>
+          </li>
         </ul>
       </nav>
     </div>
-    </div>
+
   </header>
 
   <main>
@@ -47,35 +54,40 @@
       </div>
     </div>
 
-    <div>
-      <picture>
-        <img src="img/headshot/headshot.png" alt="Marc Berliner Picture" class="headshot">
-      </picture>
-    </div>
 
-    <div id="row">
+
+    <div id="row2">
       <!-- open row that holds (2)columns -->
       <div class="container">
         <!-- open first column (used for my story) -->
-        <div class="col-lg-7">
+<div class="row">
+          <div>
+                <img src="img/headshot/headshot.jpg" alt="Marc Berliner Picture" class="headshot" style="float: right; padding: 10px;">
+            <div>
           <h2>My Story</h2>
+          <br>
           <p>
             I grew up in Weston Connecticut and attended Syracuse University for industrial and interactive design.
           </p>
+<br>
           <p>
             I have prior experience both as a designer and working in health care. I have worked for a design studio creating packaging and bottle designs for beauty products. There, I learned how to design products that were both beautiful and
             functional. The marriage of form and function are design principles that I currently use when creating user interfaces. In recent years I have worked at a treatment center to help patients overcome addiction and mental health issues. My
             prior design experience has helped grow my artistic and creative skills while my health care experience has shown me how to work with people in a compassionate manner.
           </p>
+          <br>
           <p>
             Outside of work I enjoy staying active, exercising, skiing, and hiking. I also have a strong passion for the fine arts. I love to draw, paint, and sculpt.
           </p>
           <a href="files/marc_berliner_resume.pdf" target="_blank" class="button contact" style="margin-top: 40px; margin-bottom: 20px;">View my resume</a>
         </div><!-- end first column -->
+      </div>
+    </div>
+
         <!-- open second column (used for Skills & Tools) -->
         <div style="padding-top: 10px;">
-          <h2>Skills &amp; Tools</h2>
-          <div class="column col-md-6 col-lg-5">
+          <h2 style="margin-bottom: -8px;">Skills &amp; Tools</h2>
+          <div class="column col-md-4 col-lg-5">
             <h3>Relevant Skills</h3>
             <ul>
               <li>User interface design</li>
@@ -84,17 +96,18 @@
               <li>User research</li>
               <li>Rapid prototyping</li>
               <li>User testing</li>
+              <li>Front-end Development</li>
             </ul>
           </div>
-          <div class="column col-md-6 col-lg-5">
+          <div class="column col-md-4 col-lg-5">
             <h3>Tools I Use</h3>
             <ul>
               <li>Figma</li>
               <li>Sketch</li>
-              <li>Adobe XD</li>
-              <li>Adobe Illustrator</li>
-              <li>Adobe Photoshop</li>
-              <li>Adobe Indesign </li>
+              <li>Adobe Creative Suite</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
             </ul>
           </div>
         </div><!-- end second column -->
@@ -106,26 +119,39 @@
   <!-- For the footer -->
   <footer id="contact" style="clear: both;">
     <div class="container">
+      <div style="text-align: center;">
       <h2>Get in Touch</h2>
-      <h3>Did you like my work?</h3>
-      <p>Email me at <a href="mailto:Mlberliner1@gmail.com?subject=feedback" class="button contact">Mlberliner1@gmail.com</a></p>
-        <p>Or contact me by phone <a href="tel:+19178171930"> 917-817-1930</a>.</p>
+      <div style="border-bottom: 2px solid #051739; max-width: 30%; margin-top: -10px; margin-left: auto; margin-right: auto;"></div>
+      <br>
+      <p style="margin-bottom: 5px;"> Did you like my work? Email me or contact me by phone.</p>
+
+
+  <a href="mailto:Mlberliner1@gmail.com?subject=feedback" class="button contact" style="width: 220px; margin-top: 8px;">Mlberliner1@gmail.com</a> <a href="tel:+19178171930" class="button contact" style="width: 220px; margin-top:8px;"> 917-817-1930</a>
+
+  <br>
+  <br>
       <!--Social Media Layout and Placeholders-->
       <div>
         <a href="https://www.linkedin.com/in/marc-berliner-46a29465" target="_blank">
           <img src="img/logos/linkedin.svg" alt="Linkedin">
         </a>
+
+
         <a href="https://www.behance.net/marcberliner" target="_blank">
           <img src="img/logos/behance.svg" alt="Behance">
         </a>
+
         <p>
+          <br>
           Copyright Marc Berliner 2022
         </p>
       </div>
+      </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
-</body>
 
-</html>
+  </body>
+
+  </html>

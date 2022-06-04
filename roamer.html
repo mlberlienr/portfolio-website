@@ -21,145 +21,333 @@
   <!-- For the header -->
   <header id="navBar">
     <!-- For the navigation -->
-    <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
+
+    <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
         <img src="img/logos/marcberlinerdesign.svg" alt="Marc Berliner Design" class="logo" id="logo">
       </a>
 
       <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
+        <ul style="margin-right: 15px;">
+          <li><a href="index.html#work">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a onclick="menuToggle()" href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+
+          <li>
+            <p id="click_advance">
+              <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars fas"></i>
+              </a>
+            </p>
+          </li>
         </ul>
       </nav>
     </div>
-    </div>
+
   </header>
 
   <main>
-    <!-- For Proseeds Cover Image -->
-    <div class="container-2" style="padding-top: 40px;">
-      <picture>
-        <img class="projectimage" src="img/roamer/roamercover.jpg" alt="Roamer Cover Image">
-      </picture>
-    </div>
-    <!-- For Proseeds Contents Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/2.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds Project Overview Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/3.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds User Stories and User Flow Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/4.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds Low Fidelity Frames Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/5.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds Mid Fidelity Frames Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/6.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds User Testing Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/7.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds Style Guide Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/8.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds Login and Sign Up Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/9.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds Dashboard Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/10.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds Creaste a savings Goal Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/11.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds Responsive Mockup Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/12.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
-    <!-- For Proseeds Phone Mockup Image -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/13.jpg" alt="Roamer Contnets">
-      </picture>
+
+
+
+
+    <div class="row">
+      <div class="column col-md-6 col-lg-6">
+        <div style="z-index:1; padding-top; 60px; padding-left: 5%;">
+          <h1>UX/UI Case Study: Roamer</h1>
+          <h2>Responsive Location Based Application</h2>
+        </div>
+      </div>
+
+
+      <img src="img/roamer/roamerhero.jpg" alt="Roamer Hero">
+
     </div>
 
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/14.jpg" alt="Roamer Contnets">
-      </picture>
+    <div class="container">
+      <div id="work2">
+
+
+        <div class="row">
+
+          <h3>Context</h3>
+
+          <h5 style="font-weight: lighter">“7.1 million more Americans participated in outdoor recreation in 2020 than in the year prior.” </h5>
+
+<p>-2021 Outdoor Participation Trends Report</p>
+
+        </div>
+
+
+
+        <div class="wrap">
+          <div class="row">
+            <div class="column col-md-6 col-lg-6">
+              <h3>Problem</h3>
+              <p>Outdoor activities have been growing in popularity. Finding and planning these activities often involves using many different apps and websites.</p>
+            </div>
+            <div class="column col-md-6 col-lg-6">
+              <h3>Proposed Solution</h3>
+              <p>An all in one application for outdoor hobbyists to help them plan, locate, and experience their favorite outdoor activities. The app streamlines the user’s process by having all the information needed in one application.</p>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="row">
+            <h3>User Research</h3>
+            <p>Five user interviews were conducted to get a better understanding of my user base, their process, and their needs. </p>
+
+
+              <div class="column col-md-6 col-lg-6">
+                <h4 style="margin-top: -15px;">Research Goals</h4>
+                <ul style="margin-top: -20px;">
+                  <li>Learn how users research, locate, and 	navigate to outdoor activities</li>
+                  <li>Gain insight into any difficulties they come 	across in this process</li>
+                  <li>Discover potential opportunities</li>
+                </ul>
+                </div>
+
+                  <div class="column col-md-6 col-lg-6">
+                    <h4 style="margin-top: -15px;">User Wants</h4>
+                    <ul style="margin-top: -20px;">
+                      <li>An app for all types of outdoor activities</li>
+                      <li>Reviews of locations and activities</li>
+                      <li>Comprehensive descriptions and photos</li>
+                      <li>Filter for specific attributes</li>
+                      <li>Location accessibilities</li>
+                    </ul>
+                    </div>
+
+                    </div>
+
+                    <div class="wrap">
+                      <div class="row">
+
+<h3>User Personas</h3>
+
+<div class="column col-lg-5">
+  <div class="user-card">
+    <h4 style="text-align: center;">EMMA</h4>
+    <div class="user-img">
+  <img src="img/roamer/emma.jpg" alt="Emma">
+  </div>
+<br>
+
+<p><span style="font-weight: bold">Age:</span> 22</p>
+<p><span style="font-weight: bold">Education:</span> Bachelor’s in Psychology</p>
+<p><span style="font-weight: bold">Status:</span>Single</p>
+<p><span style="font-weight: bold">Location:</span>Portland, ME</p>
+<br>
+<p><span style="font-weight: bold">Scenario:</span>“I needed an outlet from school and took up hiking last semester. I like easy going trails and love bringing my dog along for the adventure!”</p>
+<br>
+<p><span style="font-weight: bold">Goals:</span><br>
+- Find entry level activies <br>
+- Find activities that allow pets</p>
+
+
+  </div>
+  </div>
+
+  <div class="column col-lg-5">
+    <div class="user-card">
+      <h4 style="text-align: center;">KATE</h4>
+      <div class="user-img">
+    <img src="img/roamer/KATE.jpg" alt="Kate">
+    </div>
+  <br>
+
+  <p><span style="font-weight: bold">Age:</span> 31</p>
+  <p><span style="font-weight: bold">Education:</span> Bachelor’s in Advertising</p>
+  <p><span style="font-weight: bold">Status:</span>Has a Partner</p>
+  <p><span style="font-weight: bold">Location:</span>Brooklyn, NY</p>
+  <br>
+  <p><span style="font-weight: bold">Scenario:</span>“My partner and I are planning a trip upsate for the weekend. We only have a limited amount of time and like to plan our trips accordingly.”</p>
+  <br>
+  <p><span style="font-weight: bold">Goals:</span><br>
+  - Find activies that fit with her	limited schedule <br>
+  - Find weekend getaways for her	and her partner </p>
+
+
+    </div>
     </div>
 
-    <!-- For Proseeds Hand MockupnImage -->
-    <div class="container-2">
-      <picture>
-        <img class="projectimage" src="img/roamer/15.jpg" alt="Roamer Contnets">
-      </picture>
-    </div>
+    <div class="column col-lg-5">
+      <div class="user-card">
+        <h4 style="text-align: center;">ROBERT</h4>
+        <div class="user-img">
+      <img src="img/roamer/robert.jpg" alt="Robert">
+      </div>
+    <br>
 
-    <div style="text-align: center; margin-top: 30px; margin-bottom: 40px;">
-    <a href="#" class="button">Back to top</a>
-    </div>
+    <p><span style="font-weight: bold">Age:</span> 43</p>
+    <p><span style="font-weight: bold">Education:</span>MBA</p>
+    <p><span style="font-weight: bold">Status:</span>Married</p>
+    <p><span style="font-weight: bold">Location:</span>Sacramento, CA</p>
+    <br>
+    <p><span style="font-weight: bold">Scenario:</span>“My kids just got let out of school for the summer. I like to take them on trips to experience the great outdoors.”</p>
+    <br>
+    <p><span style="font-weight: bold">Goals:</span><br>
+    - Find a activites that his whole	family can enjoy</p>
+
+
+      </div>
+      </div>
+
+
+
+                        </div>
+                          </div>
+
+
+
+        <div class="wrap">
+          <div class="row">
+            <!-- open row that holds (2)columns for project -->
+
+              <h3>User Flow</h3>
+              <div class="proj-img">
+                      <img src="img/roamer/userflow.png" alt="User Flow">
+          </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="wrap">
+          <div class="row">
+<div class="column col-md-6 col-lg-6">
+            <h3>Low Fidelity Usability test</h3>
+            <p> Three users were recruited to test the usability of my prototype. They were asked to complete seven tasks using the prototype. During each task they were asked to explain any difficulties they came across.</p>
+<h4>Goals</h4>
+<p>- Find any pain points in the UI</p>
+<p>- Test usability of user flows</p>
+<p>- Gain insight to any additional user needs</p>
+
+<h4>Findings</h4>
+<p>- Users preferred to sign in with Gmail or Apple</p>
+<p>- Browsing banner blocked view of certain functions</p>
+<p>- Users wanted more detailed filters  including 	handicap accessible and time required for each activity</p>
+            </div>
+
+            <div class="column col-md-6 col-lg-6">
+              <div class="proj-img">
+                <img src="img/roamer/lowfidelity.png" alt="Low Fidelity">
+</div>
+</div>
+
+          </div>
+        </div>
+
+        <div class="wrap">
+          <div class="row">
+
+            <h3>Mid Fidelity</h3>
+
+            <img src="img/roamer/midfidelity.png" alt="Mid Fidelity">
+
+          </div>
+        </div>
+
+        <div class="wrap">
+          <div class="row">
+
+            <h3>Style Guide</h3>
+
+            <img src="img/roamer/style.png" alt="Mid Fidelity">
+
+          </div>
+        </div>
+
+
+        <div class="wrap">
+          <div class="row">
+
+            <h3>High Fidelity</h3>
+<div class="proj-img">
+            <img src="img/roamer/highfidelity.png" alt="Mid Fidelity">
+</div>
+          </div>
+        </div>
+
+
+
+        <div class="wrap">
+          <div class="row">
+            <h3>Responsive Design</h4>
+            <img src="img/roamer/responsive.jpg">
+          </div>
+        </div>
+
+
+
+
+          <div class="wrap">
+            <div class="row">
+              <img src="img/roamer/mockup1.jpg">
+            </div>
+          </div>
+
+
+          <div class="wrap">
+            <div class="row">
+              <img src="img/roamer/mockup2.jpg">
+            </div>
+          </div>
+
+
+          <div style="text-align: center; position:relative; width: 100%; margin-top: 30px; margin-bottom: 40px;">
+
+            <a href="mindaid.html" class="button" style="position: absolute; left: 8%; "> < Previous project</a>
+
+            <a href="#" class="button">Back to top</a>
+
+
+          </div>
+
+        </div>
+      </div>
 
   </main>
-<!-- For the footer -->
-<footer id="contact" style="clear: both;">
-  <div class="container">
-    <h2>Get in Touch</h2>
-    <h3>Did you like my work?</h3>
-    <p>Email me at <a href="mailto:Mlberliner1@gmail.com?subject=feedback" class="button contact">Mlberliner1@gmail.com</a></p>
-      <p>Or contact me by phone <a href="tel:+19178171930"> 917-817-1930</a>.</p>
-    <!--Social Media Layout and Placeholders-->
-    <div>
-      <a href="https://www.linkedin.com/in/marc-berliner-46a29465" target="_blank">
-        <img src="img/logos/linkedin.svg" alt="Linkedin">
-      </a>
-      <a href="https://www.behance.net/marcberliner" target="_blank">
-        <img src="img/logos/behance.svg" alt="Behance">
-      </a>
-      <p>
-        Copyright Marc Berliner 2022
-      </p>
-    </div>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
-</body>
 
-</html>
+
+  <!-- For the footer -->
+  <footer id="contact" style="clear: both;">
+    <div class="container">
+      <div style="text-align: center;">
+      <h2>Get in Touch</h2>
+      <div style="border-bottom: 2px solid #051739; max-width: 30%; margin-top: -10px; margin-left: auto; margin-right: auto;"></div>
+      <br>
+      <p style="margin-bottom: 5px;"> Did you like my work? Email me or contact me by phone.</p>
+
+
+  <a href="mailto:Mlberliner1@gmail.com?subject=feedback" class="button contact" style="width: 220px; margin-top: 8px;">Mlberliner1@gmail.com</a> <a href="tel:+19178171930" class="button contact" style="width: 220px; margin-top:8px;"> 917-817-1930</a>
+
+  <br>
+  <br>
+      <!--Social Media Layout and Placeholders-->
+      <div>
+        <a href="https://www.linkedin.com/in/marc-berliner-46a29465" target="_blank">
+          <img src="img/logos/linkedin.svg" alt="Linkedin">
+        </a>
+
+
+        <a href="https://www.behance.net/marcberliner" target="_blank">
+          <img src="img/logos/behance.svg" alt="Behance">
+        </a>
+
+        <p>
+          <br>
+          Copyright Marc Berliner 2022
+        </p>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+  </body>
+
+  </html>
